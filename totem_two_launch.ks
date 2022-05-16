@@ -17,7 +17,6 @@ WHEN MAXTHRUST = 0 THEN {
     PRINT "Staging.".
     STAGE.
     if currentStage < 2 {
-
     PRESERVE.
     }
     if currentStage = 2{
@@ -29,28 +28,28 @@ WHEN MAXTHRUST = 0 THEN {
 
 UNTIL SHIP:apoapsis > 80000 {
     IF SHIP:VELOCITY:SURFACE:MAG < 100{
-        SET currentHeading TO HEADING(90,80).
+        SET currentHeading TO HEADING(90,90).
     }    
     IF SHIP:VELOCITY:SURFACE:MAG >= 100 AND SHIP:VELOCITY:SURFACE:MAG < 200{
-        SET currentHeading TO HEADING(90,70).
+        SET currentHeading TO HEADING(90,85).
     }
     IF SHIP:VELOCITY:SURFACE:MAG >= 200 AND SHIP:VELOCITY:SURFACE:MAG < 300{
-        SET currentHeading TO HEADING(90,60).
+        SET currentHeading TO HEADING(90,80).
     }
     IF SHIP:VELOCITY:SURFACE:MAG >= 300 AND SHIP:VELOCITY:SURFACE:MAG < 400{
-        SET currentHeading TO HEADING(90,50).
+        SET currentHeading TO HEADING(90,75).
     }
     IF SHIP:VELOCITY:SURFACE:MAG >= 400 AND SHIP:VELOCITY:SURFACE:MAG < 500{
-        SET currentHeading TO HEADING(90,40).
+        SET currentHeading TO HEADING(90,70).
     }
     IF SHIP:VELOCITY:SURFACE:MAG >= 500 AND SHIP:VELOCITY:SURFACE:MAG < 600{
-        SET currentHeading TO HEADING(90,30).
+        SET currentHeading TO HEADING(90,60).
     }
     IF SHIP:VELOCITY:SURFACE:MAG >= 600 AND SHIP:VELOCITY:SURFACE:MAG < 700{
-        SET currentHeading TO HEADING(90,20).
+        SET currentHeading TO HEADING(90,50).
     }
     IF SHIP:VELOCITY:SURFACE:MAG >= 700 AND SHIP:VELOCITY:SURFACE:MAG < 800{
-        SET currentHeading TO HEADING(90,30).
+        SET currentHeading TO HEADING(90,40).
     }
 }
 
