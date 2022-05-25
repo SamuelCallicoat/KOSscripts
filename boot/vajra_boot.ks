@@ -6,4 +6,4 @@ COPYPATH("0:/circularize", "").
 COPYPATH("0:/reentry", "").
 COPYPATH("0:/countdown", "").
 //                              DGR, ALT,    REENTRY?, 2stagecirc
-runpath( "totem_two_launch.ks", 90,   100000, false,  true).
+runpath( "totem_two_launch.ks", 90,   73000, true, false).
